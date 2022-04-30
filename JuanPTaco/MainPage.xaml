@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JuanPTaco.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="INICIO" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Image Source="LOGO.png"/>
+        <Label Text="Desarrollado por: Juan Pablo Taco"></Label>
+        <Label Text="Noveno Sistemas"></Label>
+        <Label Text="Universidad Israel"></Label>
+
+
+
+        <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>

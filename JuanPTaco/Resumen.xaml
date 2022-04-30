@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JuanPTaco.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="RESUMEN" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Usuario Conectado " HorizontalTextAlignment="End"></Label>
+            <Label x:Name="lblUser" TextColor="BurlyWood" HorizontalTextAlignment="End"/>
+            <Label Text="Su contraseña es: " HorizontalTextAlignment="End"/>
+            <Label x:Name="lblPass" TextColor="BurlyWood" HorizontalTextAlignment="End"/>
+
+            <Label Text="Resumen de Pago"  FontSize="20" TextColor="Brown"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Grid.Column="0" Grid.Row="0" Text="Nombres" VerticalTextAlignment="End"></Label>
+                <Label Grid.Column="1" Grid.Row="0" x:Name="lblNombres" />
+
+                <Label Grid.Column="0" Grid.Row="1" Text="Total a Pagar" VerticalTextAlignment="End"></Label>
+                <Label Grid.Column="1" Grid.Row="1" x:Name="lblTotalPagar" />
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

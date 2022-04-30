@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JuanPTaco.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="LOGIN" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Image Source="LOGO.png"/>
+            <Frame CornerRadius="10"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            HasShadow="false"
+            Padding="8"
+            >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Text="Usuario" TextColor="DarkBlue" VerticalTextAlignment="End" ></Label>
+                    <Entry Grid.Column="1" Grid.Row="0" x:Name="txtUsuario" />
+                    <Label Grid.Column="0" Grid.Row="1" Text="Password" TextColor="DarkBlue" VerticalTextAlignment="End"></Label>
+                    <Entry Grid.Column="1" Grid.Row="1" x:Name="txtPassword" IsPassword="True"/>
+                </Grid>
+            </Frame>
+            <Button x:Name="btnAbrir" Text="Ingresar" Clicked="btnAbrir_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
